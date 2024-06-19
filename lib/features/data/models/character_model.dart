@@ -9,13 +9,13 @@ class CharacterModel {
   late final List<dynamic> episode;
   
   CharacterModel.fromJson(Map<String, dynamic> json) {
-    id = json['results']['id'];
-    name = json['results']['name'];
-    status = json['results']['status'];
-    species = json['results']['species'];
-    type = json['results']['type'];
-    gender = json['results']['gender'];
-    image = json['results']['image'];
-    episode = json['results']['episode'];
+    id = json['id'];
+    name = json['name'];
+    status = json['status'];
+    species = json['species'];
+    type = json['type'];
+    gender = json['gender'];
+    image = json['image'];
+    episode = json['episode'];
   }
 }

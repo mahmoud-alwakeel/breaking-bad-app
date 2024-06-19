@@ -7,7 +7,7 @@ import 'package:breaking_bad/features/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Approuter {
+class AppRouter {
   late CharactersRepo charactersRepo;
   late CharactersCubit charactersCubit;
 
@@ -28,7 +28,10 @@ class Approuter {
         );
       case AppRoutes.charactersDetailsScreen:
         return MaterialPageRoute(
-            builder: (_) => const CharactersDetailsScreen());
+          builder: (_) => const CharactersDetailsScreen(),
+        );
+      default:
+        return null; // Return null if no matching route is found.
     }
   }
 }
